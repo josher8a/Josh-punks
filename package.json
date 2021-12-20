@@ -1,0 +1,8 @@
+{
+  "name": "platzi-punks",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/josher8a/platzi-punks",
+  "author": "Joshua <josher8a@gmail.com>",
+  "license": "MIT"
+}
