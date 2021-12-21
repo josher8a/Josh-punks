@@ -2,6 +2,7 @@
 pragma solidity ^0.8.0;
 
 contract PunkDNA {
+    //Misses to use enum types for map keys
     string[] private _accessoriesType = [
         "Blank",
         "Kurt",
@@ -213,7 +214,7 @@ contract PunkDNA {
         return uint256(hashedParams);
     }
 
-    // Get attributes
+    // Get attributes 
     uint8 constant ADN_SECTION_SIZE = 2;
 
     function _getDNASection(uint256 _dna, uint8 _rightDiscard)
@@ -222,6 +223,8 @@ contract PunkDNA {
         returns (uint8)
     {
         return
+        //silces of 2 digits size (ADN_SECTION_SIZE), shifted to the right (_rightDiscard)
+        // TODO: improve this function to avoid the exp usage and use bitwise operators
             uint8(
                 (_dna % (1 * 10**(_rightDiscard + ADN_SECTION_SIZE))) /
                     (1 * 10**_rightDiscard)
