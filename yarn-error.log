@@ -1,0 +1,45 @@
+Arguments: 
+  /home/joshua/.nvm/versions/node/v16.11.1/bin/node /home/joshua/.nvm/versions/node/v16.11.1/bin/yarn add @openzeppelin/contracts
+
+PATH: 
+  /home/joshua/.nvm/versions/node/v16.11.1/bin:/home/joshua/.local/bin:/home/joshua/.local/bin:/usr/local/bin:/usr/bin:/bin:/usr/local/sbin:/var/lib/flatpak/exports/bin:/usr/lib/jvm/default/bin:/usr/bin/site_perl:/usr/bin/vendor_perl:/usr/bin/core_perl:/var/lib/snapd/snap/bin:/usr/lib/jvm/default/bin
+
+Yarn version: 
+  1.22.17
+
+Node version: 
+  16.11.1
+
+Platform: 
+  linux x64
+
+Trace: 
+  Error: getaddrinfo EAI_AGAIN registry.yarnpkg.com
+      at GetAddrInfoReqWrap.onlookup [as oncomplete] (node:dns:71:26)
+
+npm manifest: 
+  {
+    "name": "platzi-punks",
+    "version": "1.0.0",
+    "main": "index.js",
+    "repository": "https://github.com/josher8a/platzi-punks",
+    "author": "Joshua <josher8a@gmail.com>",
+    "license": "MIT",
+    "devDependencies": {
+      "@nomiclabs/hardhat-ethers": "^2.0.3",
+      "@nomiclabs/hardhat-waffle": "^2.0.1",
+      "chai": "^4.3.4",
+      "ethereum-waffle": "^3.4.0",
+      "ethers": "^5.5.2",
+      "hardhat": "^2.8.0"
+    },
+    "dependencies": {
+      "dotenv": "^10.0.0"
+    }
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile
